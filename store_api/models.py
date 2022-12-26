@@ -24,6 +24,7 @@ class Store(models.Model):
     store_description = models.TextField(null=True, blank=True)
     day_created = models.DateTimeField(default=now)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stores')
+    image = models.ImageField(upload_to="store images")
     product = models.ManyToManyField(Product, related_name='stores')
 
     def __str__(self):

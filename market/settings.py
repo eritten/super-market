@@ -126,3 +126,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ASGI_APPLICATION = 'market.asgi.application'
+LOGIN_URL = '/login_user/'
+LOGIN_REDIRECT_URL = '/login_user/'
